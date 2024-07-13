@@ -52,6 +52,8 @@ export default function NewCollection() {
 
     try {
       const oid = await fetchOid()
+      // eslint-disable-next-line no-console
+      console.log('oid:>> ', oid)
       const owner = repoOwner || session?.user?.login || ''
       const collection = slugify(name, { allowedChars: 'a-zA-Z0-9' })
       const commitInput = collectionCommitInput({

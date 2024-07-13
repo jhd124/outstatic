@@ -4,6 +4,8 @@
     "apps/*",
     "packages/*"
   ],
+  "name": "outstatic",
+  "packageManager": "pnpm@8.13.1",
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev --filter=outstatic-dev-blog --filter=outstatic",
