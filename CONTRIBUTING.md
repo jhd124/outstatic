@@ -17,7 +17,7 @@
 
   ```
 
-  Note: changes to `/apps/dev` should be copied over to `/examples/blog`.
+  Note: changes to `/apps/china-travel` should be copied over to `/examples/blog`.
 
 # Developing
 
@@ -49,14 +49,14 @@ To develop locally:
 
 There are a few particularities to how Outstatic works. Since most editor actions (creating collections, editing documents, etc...) result in commits, you should avoid editor originated commits being added to your development branches. Ideally, when developing, point your `OST_REPO_BRANCH` to a different branch than the one you are working on.
 
-1. We recommend developing the library together with the `outstatic-dev-blog` located at `/apps/dev`. For that you should create a `.env.local` file in that folder and add the following environment variables:
+1. We recommend developing the library together with the `outstatic-dev-blog` located at `/apps/china-travel`. For that you should create a `.env.local` file in that folder and add the following environment variables:
    ```
     OST_GITHUB_ID=YOUR_GITHUB_OAUTH_ID
     OST_GITHUB_SECRET=YOUR_GITHUB_OAUTH_SECRET
     OST_REPO_SLUG=outstatic
     OST_REPO_BRANCH=main
     OST_CONTENT_PATH=outstatic/content
-    OST_MONOREPO_PATH=apps/dev
+    OST_MONOREPO_PATH=apps/china-travel
    ```
 
 ## Continue developing
@@ -96,7 +96,7 @@ pnpm graphql-codegen
 
 You can deploy the `outstatic-dev-blog` to Vercel by adding a new project with the following configuration:
 
-1. Set the **Root Directory** to `apps/dev`
+1. Set the **Root Directory** to `apps/china-travel`
 
 1. On the **Build and Output Settings** section add the following to your `Build Command`:
 
@@ -111,6 +111,6 @@ You can deploy the `outstatic-dev-blog` to Vercel by adding a new project with t
     OST_REPO_SLUG=outstatic
     OST_REPO_BRANCH=main
     OST_CONTENT_PATH=outstatic/content
-    OST_MONOREPO_PATH=apps/dev
+    OST_MONOREPO_PATH=apps/china-travel
    ```
    Keep in mind that, if you want to log in to your **Outstatic Dashboard** on Vercel, you should probably create a different GitHub OAuth App from the one you use for local development, since the callback url is going to be different.
