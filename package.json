@@ -4,16 +4,17 @@
     "apps/*",
     "packages/*"
   ],
+  "name": "outstatic-root",
+  "packageManager": "pnpm@8.13.1",
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev --filter=outstatic-dev-blog --filter=outstatic",
+    "dev": "turbo run dev --filter=china-travel --filter=outstatic",
     "dev:docs": "turbo run dev --filter=docs --filter=outstatic",
     "lint": "turbo run lint",
     "clean": "turbo run clean",
     "format": "prettier --write",
     "lint-staged": "lint-staged",
     "preinstall": "npx only-allow pnpm",
-    "prepare": "husky install",
     "test": "turbo run test",
     "typecheck": "turbo run typecheck",
     "prepublish": "pnpm typecheck && pnpm test && pnpm build --filter='!outstatic-blog-example'"
