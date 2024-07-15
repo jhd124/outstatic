@@ -27,3 +27,13 @@ jobs:
         with:
           push: true
           tags: flyer1/china-travel:latest
+      -
+        name: SSH
+        run: |
+          echo ${{ secrets.TENCENT_SSH_PEM }} > github.pem
+          chmod 400 github.pem
+          ssh -i github.pem root@43.153.91.198
+          ls
+          pwd
+          docker pull flyer1/china-travel
+          docker run flyer1/china-travel
