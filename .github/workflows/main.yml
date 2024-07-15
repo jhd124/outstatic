@@ -37,12 +37,6 @@ jobs:
           echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
           chmod 400 ~/.ssh/id_rsa
           ssh-keyscan $REMOTE_HOST >> ~/.ssh/known_hosts
+          ssh -i ~/.ssh/id_rsa $REMOTE_USER@$REMOTE_HOST 'echo "Hello, World!"'
       
-      - name: Run commands on remote server
-        run: |
-          ssh $REMOTE_USER@$REMOTE_HOST 'echo "Hello, World!"'
-          ls
-          pwd
-          docker pull flyer1/china-travel
-          docker run flyer1/china-travel
         
