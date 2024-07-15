@@ -27,13 +27,22 @@ jobs:
         with:
           push: true
           tags: flyer1/china-travel:latest
-      -
-        name: SSH
+      - name: Setup SSH
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          REMOTE_HOST: "43.153.91.198"
+          REMOTE_USER: "root"
         run: |
-          echo ${{ secrets.TENCENT_SSH_PEM }} > github.pem
-          chmod 400 github.pem
-          ssh -i github.pem root@43.153.91.198
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          chmod 400 ~/.ssh/id_rsa
+          ssh-keyscan $REMOTE_HOST >> ~/.ssh/known_hosts
+      
+      - name: Run commands on remote server
+        run: |
+          ssh $REMOTE_USER@$REMOTE_HOST 'echo "Hello, World!"'
           ls
           pwd
           docker pull flyer1/china-travel
           docker run flyer1/china-travel
+        
