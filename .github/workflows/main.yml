@@ -39,8 +39,10 @@ jobs:
           chmod 400 github.pem
           ssh-keyscan $REMOTE_HOST >> ~/.ssh/known_hosts
           ssh -i github.pem $REMOTE_USER@$REMOTE_HOST '{
-            ls -al ~&&
-            echo 000
+            docker pull flyer1/china-travel&&
+            docker stop china-travel 2>>error.log
+            docker rename china-travel 2>>china-travel-old
+            docker run -d -p 3000:3000 --name china-travel flyer1/china-travel
           }'
           
       
