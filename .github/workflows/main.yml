@@ -36,6 +36,7 @@ jobs:
         run: |
           echo "$SSH_PRIVATE_KEY" > github.pem
           chmod 400 github.pem
+          ssh-keygen -R $REMOTE_HOST
           ssh -i github.pem $REMOTE_USER@$REMOTE_HOST 'echo "Hello, World!"'
           rm -rf github.pem
       
