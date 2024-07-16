@@ -38,7 +38,10 @@ jobs:
           echo "$SSH_PRIVATE_KEY" > github.pem
           chmod 400 github.pem
           ssh-keyscan $REMOTE_HOST >> ~/.ssh/known_hosts
-          ssh -i github.pem $REMOTE_USER@$REMOTE_HOST
-          ls -al ~
+          ssh -i github.pem $REMOTE_USER@$REMOTE_HOST '{
+            ls -al ~&&
+            ls
+          }'
+          
       
         
