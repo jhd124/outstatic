@@ -33,10 +33,9 @@ jobs:
           REMOTE_HOST: "43.153.91.198"
           REMOTE_USER: "root"
         run: |
-          mkdir -p ~/.ssh
-          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
-          chmod 400 ~/.ssh/id_rsa
-          ssh-keyscan $REMOTE_HOST >> ~/.ssh/known_hosts
-          ssh -i ~/.ssh/id_rsa $REMOTE_USER@$REMOTE_HOST 'echo "Hello, World!"'
+          echo "$SSH_PRIVATE_KEY" > github.pem
+          chmod 400 github.pem
+          ssh -i github.pem $REMOTE_USER@$REMOTE_HOST 'echo "Hello, World!"'
+          rm -rf github.pem
       
         
