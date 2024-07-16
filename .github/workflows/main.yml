@@ -35,13 +35,10 @@ jobs:
           REMOTE_USER: "root"
         run: |
           mkdir -p ~/.ssh
-          ls -al ~
           echo "$SSH_PRIVATE_KEY" > github.pem
-          ls -al
-          cat github.pem
           chmod 400 github.pem
           ssh-keyscan $REMOTE_HOST >> ~/.ssh/known_hosts
-          ssh -i github.pem $REMOTE_USER@$REMOTE_HOST 'echo "Hello, World!"'
+          ssh -i github.pem $REMOTE_USER@$REMOTE_HOST 'docker pull flyer1/china-travel'
           rm -rf github.pem
       
         
