@@ -34,6 +34,7 @@ jobs:
           REMOTE_HOST: "43.153.91.198"
           REMOTE_USER: "root"
         run: |
+          mkdir -p ~/.ssh
           ls -al ~
           echo "$SSH_PRIVATE_KEY" > github.pem
           chmod 400 github.pem
