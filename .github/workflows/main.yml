@@ -30,7 +30,7 @@ jobs:
       #     tags: flyer1/china-travel:latest
       - name: Setup SSH
         env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_PRIVATE_KEY: ${{ secrets.TENCENT_SSH_PEM }}
           REMOTE_HOST: "43.153.91.198"
           REMOTE_USER: "root"
         run: |
