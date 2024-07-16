@@ -40,7 +40,7 @@ jobs:
           ssh-keyscan $REMOTE_HOST >> ~/.ssh/known_hosts
           ssh -i github.pem $REMOTE_USER@$REMOTE_HOST '{
             ls -al ~&&
-            ls
+            echo 000
           }'
           
       
