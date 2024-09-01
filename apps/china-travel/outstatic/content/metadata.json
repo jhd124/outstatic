@@ -1,6 +1,6 @@
 {
-  "commit": "d164819e9dad435410707d379bdda074f40eda64",
-  "generated": "2024-09-01T15:35:16.451Z",
+  "commit": "3a871b86a948328c01148f8f3ad828732f525311",
+  "generated": "2024-09-01T15:36:51.004Z",
   "metadata": [
     {
       "__outstatic": {
@@ -196,6 +196,26 @@
       "publishedAt": "2024-09-01T15:18:43.062Z",
       "slug": "about-china",
       "status": "draft",
+      "title": "About China"
+    },
+    {
+      "__outstatic": {
+        "commit": "3a871b86a948328c01148f8f3ad828732f525311",
+        "hash": "1272335372",
+        "path": "outstatic/content/posts/about-china.md"
+      },
+      "author": {
+        "name": "flyer1",
+        "picture": "https://avatars.githubusercontent.com/u/17793355?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2024-09-01T16:24:31.718Z",
+      "slug": "about-china",
+      "status": "draft",
+      "tags": [
+      ],
       "title": "About China"
     }
   ]
