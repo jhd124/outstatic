@@ -1,6 +1,6 @@
 {
-  "commit": "3a871b86a948328c01148f8f3ad828732f525311",
-  "generated": "2024-09-01T15:36:51.004Z",
+  "commit": "dec3f072e18faa98cd09fda19ab35c2607393735",
+  "generated": "2024-09-01T15:37:54.239Z",
   "metadata": [
     {
       "__outstatic": {
@@ -200,8 +200,8 @@
     },
     {
       "__outstatic": {
-        "commit": "3a871b86a948328c01148f8f3ad828732f525311",
-        "hash": "1272335372",
+        "commit": "dec3f072e18faa98cd09fda19ab35c2607393735",
+        "hash": "2222476706",
         "path": "outstatic/content/posts/about-china.md"
       },
       "author": {
@@ -213,7 +213,7 @@
       "description": "",
       "publishedAt": "2024-09-01T16:24:31.718Z",
       "slug": "about-china",
-      "status": "draft",
+      "status": "published",
       "tags": [
       ],
       "title": "About China"

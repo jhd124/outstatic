@@ -1,13 +1,13 @@
 ---
 title: 'About China'
-status: 'draft'
+status: 'published'
 author:
   name: 'flyer1'
   picture: 'https://avatars.githubusercontent.com/u/17793355?v=4'
 slug: 'about-china'
 description: ''
 coverImage: ''
-tags: ''
+tags: []
 publishedAt: '2024-09-01T16:24:31.718Z'
 ---
 
