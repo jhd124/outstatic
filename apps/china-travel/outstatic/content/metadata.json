@@ -1,6 +1,6 @@
 {
   "commit": "c048c266def9938fa2dbdf526bb3d1c4ffec8c43",
-  "generated": "2024-09-01T15:39:09.594Z",
+  "generated": "2024-09-01T15:39:17.511Z",
   "metadata": [
     {
       "__outstatic": {
@@ -37,6 +37,34 @@
       "slug": "about",
       "status": "published",
       "title": "About Me"
+    },
+    {
+      "__outstatic": {
+        "commit": "056337c6ec4b1a28f693f8068e1a116eaef5f7e7",
+        "hash": "2721406306",
+        "path": "outstatic/content/posts/add-a-free-cms-to-your-nextjs-website-with-outstatic.md"
+      },
+      "author": {
+        "name": "Andre Vitorio",
+        "picture": "https://avatars.githubusercontent.com/u/1417109?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/outstatic-landing-M3MT.png",
+      "description": "Learn how to seamlessly integrate Outstatic into your Next.js website.",
+      "publishedAt": "2024-01-11T20:59:36.724Z",
+      "slug": "add-a-free-cms-to-your-nextjs-website-with-outstatic",
+      "status": "published",
+      "tags": [
+        {
+          "label": "Outstatic",
+          "value": "outstatic"
+        },
+        {
+          "label": "NextJs",
+          "value": "nextJs"
+        }
+      ],
+      "title": "Add a free CMS to your Next.js website with Outstatic"
     },
     {
       "__outstatic": {
@@ -119,38 +147,6 @@
         }
       ],
       "title": "Welcome to Outstatic!"
-    },
-    {
-      "__outstatic": {
-        "commit": "556f38c12082dda8bded724747fe6ccfe6a13051",
-        "hash": "1352934563",
-        "path": "outstatic/content/posts/the-next-steps-for-outstatic.md"
-      },
-      "author": {
-        "name": "Andre Vitorio",
-        "picture": "https://avatars.githubusercontent.com/u/1417109?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/1500x500-Q3ND.webp",
-      "description": "The plan was simple: start a blog and write about my journey as a developer. But that's exactly the problem, I'm a developer. ",
-      "publishedAt": "2024-01-02T14:41:29.000Z",
-      "slug": "the-next-steps-for-outstatic",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Outstatic",
-          "value": "outstatic"
-        },
-        {
-          "label": "NextJs",
-          "value": "nextJs"
-        },
-        {
-          "label": "GitHub",
-          "value": "gitHub"
-        }
-      ],
-      "title": "Far Out - The Next Steps for Outstatic "
     },
     {
       "__outstatic": {
